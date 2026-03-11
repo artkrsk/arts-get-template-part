@@ -1,0 +1,40 @@
+{
+  "name": "arts/get-template-part",
+  "type": "library",
+  "version": "1.0.0",
+  "description": "Global arts_get_template_part() function with theme override support for WordPress plugins.",
+  "keywords": [
+    "wordpress",
+    "template",
+    "partial",
+    "theme-override"
+  ],
+  "autoload": {
+    "files": [
+      "src/php/arts-get-template-part.php"
+    ]
+  },
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {
+    "captainhook/captainhook": "^5.27",
+    "ergebnis/composer-normalize": "^2.48"
+  },
+  "config": {
+    "allow-plugins": {
+      "ergebnis/composer-normalize": true
+    },
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "vendor/bin/captainhook install -f -s"
+    ],
+    "post-update-cmd": [
+      "vendor/bin/captainhook install -f -s"
+    ],
+    "normalize": "composer-normalize"
+  }
+}

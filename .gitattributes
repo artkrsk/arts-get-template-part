@@ -1,0 +1,19 @@
+# Files and directories to exclude from export (Composer install)
+
+# Development configuration
+*.code-workspace export-ignore
+.gitignore export-ignore
+.git export-ignore
+.gitattributes export-ignore
+vendor export-ignore
+
+# Config files
+/*.xml export-ignore
+captainhook.json export-ignore
+phpstan.neon export-ignore
+
+# Markdown and misc
+/*.md export-ignore
+.claude export-ignore
+.github export-ignore
+.vscode export-ignore

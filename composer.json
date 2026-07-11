@@ -1,7 +1,7 @@
 {
   "name": "arts/get-template-part",
   "type": "library",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Global arts_get_template_part() function with theme override support for WordPress plugins.",
   "keywords": [
     "wordpress",

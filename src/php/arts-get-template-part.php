@@ -5,10 +5,9 @@
  * @package Arts\GetTemplatePart
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
-
+// No ABSPATH guard: this file is composer files-autoloaded, so an `exit` here silently
+// kills any CLI process that includes vendor/autoload.php (Strauss, PHPStan, Composer
+// scripts). It only defines a guarded function — direct access yields no output anyway.
 if ( ! function_exists( 'arts_get_template_part' ) ) {
 	/**
 	 * Load a template part with theme override support.

@@ -9,6 +9,7 @@
     "partial",
     "theme-override"
   ],
+  "license": "GPL-3.0-or-later",
   "autoload": {
     "files": [
       "src/php/arts-get-template-part.php"

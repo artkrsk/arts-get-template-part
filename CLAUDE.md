@@ -14,7 +14,6 @@ lazily like PSR-4).
 - `composer check` — phpcs then phpstan (the full gate).
 - `composer phpcs` / `composer phpstan` — run one gate alone.
 - `composer fix` — phpcbf auto-fixes coding-standard violations.
-- `composer normalize` — normalize composer.json.
 
 phpstan runs at `level: max` with the WordPress stubs extension. phpcs is
 `WordPress-Core` with short-array syntax and Yoda conditions intentionally
